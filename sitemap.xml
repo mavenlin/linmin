@@ -260,4 +260,8 @@
   <url>
     <loc></loc><lastmod>2022-06-30T23:37:26-04:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc></loc><lastmod>2022-06-30T23:37:28-04:00</lastmod><changefreq>weekly</changefreq></url></urlset>
+    <loc></loc><lastmod>2022-06-30T23:37:28-04:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://linmin.me/project/qmc_pairwise/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://linmin.me/tag/quantum-chemistry/</loc><changefreq>weekly</changefreq></url></urlset>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantum Chemistry | linmin.me</title>
+    <link>https://linmin.me/tag/quantum-chemistry/</link>
+      <atom:link href="https://linmin.me/tag/quantum-chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quantum Chemistry</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://linmin.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Quantum Chemistry</title>
+      <link>https://linmin.me/tag/quantum-chemistry/</link>
+    </image>
+    
+    <item>
+      <title>O(N^2) Universal Antisymmetry in Fermionic Neural Networks</title>
+      <link>https://linmin.me/project/qmc_pairwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/project/qmc_pairwise/</guid>
+      <description>&lt;p&gt;Fermionic neural network (FermiNet) is a recently proposed wavefunction Ansatz, which is used in variational Monte Carlo (VMC) methods to solve the many-electron Schrödinger equation. FermiNet proposes permutation-equivariant architectures, on which a Slater determinant is applied to induce antisymmetry. FermiNet is proved to have universal approximation capability with a single determinant, namely, it suffices to represent any antisymmetric function given sufficient parameters. However, the asymptotic computational bottleneck comes from the Slater determinant, which scales with O(N^3) for N electrons. In this paper, we substitute the Slater determinant with a pairwise antisymmetry construction, which is easy to implement and can reduce the computational cost to O(N^2). We formally prove that the pairwise construction built upon permutation-equivariant architectures can universally represent any antisymmetric function. Besides, this universality can be achieved via continuous approximators when we aim to represent ground-state wavefunctions.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

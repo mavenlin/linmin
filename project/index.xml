@@ -35,5 +35,14 @@
 </description>
     </item>
     
+    <item>
+      <title>O(N^2) Universal Antisymmetry in Fermionic Neural Networks</title>
+      <link>https://linmin.me/project/qmc_pairwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/project/qmc_pairwise/</guid>
+      <description>&lt;p&gt;Fermionic neural network (FermiNet) is a recently proposed wavefunction Ansatz, which is used in variational Monte Carlo (VMC) methods to solve the many-electron Schrödinger equation. FermiNet proposes permutation-equivariant architectures, on which a Slater determinant is applied to induce antisymmetry. FermiNet is proved to have universal approximation capability with a single determinant, namely, it suffices to represent any antisymmetric function given sufficient parameters. However, the asymptotic computational bottleneck comes from the Slater determinant, which scales with O(N^3) for N electrons. In this paper, we substitute the Slater determinant with a pairwise antisymmetry construction, which is easy to implement and can reduce the computational cost to O(N^2). We formally prove that the pairwise construction built upon permutation-equivariant architectures can universally represent any antisymmetric function. Besides, this universality can be achieved via continuous approximators when we aim to represent ground-state wavefunctions.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
