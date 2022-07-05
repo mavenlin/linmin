@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | linmin.me</title>
+    <link>https://linmin.me/publication-type/1/</link>
+      <atom:link href="https://linmin.me/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://linmin.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>1</title>
+      <link>https://linmin.me/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Causal Representation Learning for Out-of-Distribution Recommendation</title>
+      <link>https://linmin.me/publication/wang-2022-causal/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/wang-2022-causal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the spectral bias of neural networks</title>
+      <link>https://linmin.me/publication/rahaman-2019-spectral/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/rahaman-2019-spectral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Purine: A bi-graph based deep learning framework</title>
+      <link>https://linmin.me/publication/lin-2014-purine/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lin-2014-purine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Correntropy induced l2 graph for robust subspace clustering</title>
+      <link>https://linmin.me/publication/lu-2013-correntropy/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lu-2013-correntropy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network In Network</title>
+      <link>https://linmin.me/publication/lin-2013-network/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lin-2013-network/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

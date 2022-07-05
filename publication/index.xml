@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | linmin.me</title>
+    <link>https://linmin.me/publication/</link>
+      <atom:link href="https://linmin.me/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://linmin.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>https://linmin.me/publication/</link>
+    </image>
+    
+    <item>
+      <title>$ O (N^ 2) $ Universal Antisymmetry in Fermionic Neural Networks</title>
+      <link>https://linmin.me/publication/pang-2022-n/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/pang-2022-n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Causal Representation Learning for Out-of-Distribution Recommendation</title>
+      <link>https://linmin.me/publication/wang-2022-causal/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/wang-2022-causal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EnvPool: A Highly Parallel Reinforcement Learning Environment Execution Engine</title>
+      <link>https://linmin.me/publication/weng-2022-envpool/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/weng-2022-envpool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robustness and Accuracy Could Be Reconcilable by (Proper) Definition</title>
+      <link>https://linmin.me/publication/pang-2022-robustness/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/pang-2022-robustness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Should Pre-Trained Language Models Be Fine-Tuned Towards Adversarial Robustness?</title>
+      <link>https://linmin.me/publication/dong-2021-should/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/dong-2021-should/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continual Learning from the Perspective of Compression</title>
+      <link>https://linmin.me/publication/he-2020-continual/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/he-2020-continual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online fast adaptation and knowledge accumulation: a new approach to continual learning</title>
+      <link>https://linmin.me/publication/caccia-2020-online/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/caccia-2020-online/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conditional computation for continual learning</title>
+      <link>https://linmin.me/publication/lin-2019-conditional/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lin-2019-conditional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gradient based sample selection for online continual learning</title>
+      <link>https://linmin.me/publication/aljundi-2019-gradient/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/aljundi-2019-gradient/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the spectral bias of neural networks</title>
+      <link>https://linmin.me/publication/rahaman-2019-spectral/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/rahaman-2019-spectral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online continual learning with maximal interfered retrieval</title>
+      <link>https://linmin.me/publication/aljundi-2019-online/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/aljundi-2019-online/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Spectral Bias of Deep Neural Networks.</title>
+      <link>https://linmin.me/publication/rahaman-2018-spectral/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/rahaman-2018-spectral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Softmax gan</title>
+      <link>https://linmin.me/publication/lin-2017-softmax/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lin-2017-softmax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NUS-PRO: A New Visual Tracking Challenge</title>
+      <link>https://linmin.me/publication/li-2016-nus/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/li-2016-nus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HCP: A Flexible CNN Framework for Multi-label Image Classification</title>
+      <link>https://linmin.me/publication/wei-2015-hcp/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/wei-2015-hcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mxnet: A flexible and efficient machine learning library for heterogeneous distributed systems</title>
+      <link>https://linmin.me/publication/chen-2015-mxnet/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/chen-2015-mxnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming a Pavlovian-like conditioning circuit in Escherichia coli</title>
+      <link>https://linmin.me/publication/zhang-2014-programming/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/zhang-2014-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Purine: A bi-graph based deep learning framework</title>
+      <link>https://linmin.me/publication/lin-2014-purine/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lin-2014-purine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Correntropy induced l2 graph for robust subspace clustering</title>
+      <link>https://linmin.me/publication/lu-2013-correntropy/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lu-2013-correntropy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network In Network</title>
+      <link>https://linmin.me/publication/lin-2013-network/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/publication/lin-2013-network/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Systems | linmin.me</title>
+    <link>https://linmin.me/tag/systems/</link>
+      <atom:link href="https://linmin.me/tag/systems/index.xml" rel="self" type="application/rss+xml" />
+    <description>Systems</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://linmin.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Systems</title>
+      <link>https://linmin.me/tag/systems/</link>
+    </image>
+    
+    <item>
+      <title>EnvPool</title>
+      <link>https://linmin.me/project/envpool/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://linmin.me/project/envpool/</guid>
+      <description>&lt;p&gt;Distributed training of supervised networks are more or less a well solved problem. There&amp;rsquo;s a gap though for distributed Reinforcement Learning to achieve the same level of hardware utilization, especially for GPU. The key issue is that the efficiency bottleneck of RL lies in the simulation of environments. The environments are usually available only on CPU and lacks SIMD implementation.&lt;/p&gt;
+&lt;p&gt;In this work, we developed a highly parallel execution engine in C++, for acceleration of the environments. It can help you accelerate your RL pipeline by &lt;strong&gt;a lot&lt;/strong&gt;, checkout our github page and the arxiv paper.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
