@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50.799999mm"
+   height="50.799999mm"
+   viewBox="0 0 50.799998 50.799999"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.65765125"
+     inkscape:cx="412.07251"
+     inkscape:cy="9.1233766"
+     inkscape:window-width="1392"
+     inkscape:window-height="891"
+     inkscape:window-x="84"
+     inkscape:window-y="37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ee2536;fill-opacity:1;stroke:#ee2536;stroke-width:0.958091;stroke-opacity:1"
+       id="rect1"
+       width="49.841908"
+       height="49.841908"
+       x="0.47904533"
+       y="0.47904533" />
+    <text
+       xml:space="preserve"
+       style="font-size:22.5778px;font-family:Arial;-inkscape-font-specification:Arial;fill:#0000ff;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+       x="5.0955596"
+       y="23.056904"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-size:22.5778px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+         x="5.0955596"
+         y="23.056904">Min</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22.5778px;font-family:Arial;-inkscape-font-specification:Arial;fill:#0000ff;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+       x="5.5516772"
+       y="44.384567"
+       id="text1-8"><tspan
+         sodipodi:role="line"
+         id="tspan1-5"
+         style="font-size:22.5778px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+         x="5.5516772"
+         y="44.384567">Lin</tspan></text>
+  </g>
+</svg>

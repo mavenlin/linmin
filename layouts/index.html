@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<p>
+    I am currently a Principal Research Scientist and the Head of Research at the <a href="https://github.com/sail-sg/">Sea AI Lab</a>.
+</p>
+<p>
+    My central research interest is to build <a href="research/">general learning systems</a> that is capable of learning continuously online once deployed. (no taking it offline, no concept of pretraining, finetuning, epochs or inference, just learn as it interacts with the world.)
+</p>
+<p>
+    ^ The above is hard, I also work on relatively easier ones like:
+</p>
+<ul>
+    <li>
+        <a href="posts/ai_for_science">AI for Science (Density Functional Theory)</a>
+    </li>
+    <li>
+        <a href="posts/mlsys">Machine Learning Systems</a>.
+    </li>
+</ul>
+
+<h1>Links</h1>
+
+<a href="https://scholar.google.com.sg/citations?user=BGONmkIAAAAJ&hl=en">Google Scholar</a> |
+<a href="https://github.com/mavenlin">Github</a> |
+<a href="https://www.linkedin.com/in/min-lin-08a3a422/">LinkedIn</a>
+
+<h1>Latest posts</h1>
+
+<div class="posts-list">
+    {{ with .Site.GetPage "/posts" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+    <div class="post">
+        <p>
+            <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
+            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            {{ .Summary }}
+        </p>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>
+
+{{ end }}

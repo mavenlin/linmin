@@ -1,0 +1,42 @@
+baseURL = 'https://linmin.me/'
+languageCode = 'en-us'
+title = 'Min Lin'
+theme = 'hugo-theme-console'
+
+pygmentsCodeFences = true
+# pygmentsUseClasses = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = false
+noClasses = true
+tabWidth = 2
+style = "monokailight"
+
+[params]
+  # Cutting off the page title to two chars for mobile (console-demo -> co)
+  titleCutting = true
+
+  # Set the animation style -- https://animate.style/
+  # To disable animations, please remove or comment animationStyle parameter
+  animateStyle = "animated zoomIn fast"
+
+  [[params.navlinks]]
+  name = "research/"
+  url = "research/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
+
+  [[params.navlinks]]
+  name = "software/"
+  url = "software/"
+
+  [[params.navlinks]]
+  name = "publications/"
+  url = "publications/"
