@@ -39,6 +39,8 @@ Estimate the return directly is very inefficient, therefore value functions are 
 - **Stage 2a**: With the online learnable $p(x)$ provided by stage 1a, find a solution to MDP.
 - **Stage 2b**: With the online learnable $p(x_{t}|x_{0:t-1})$, and the tools developed in Stage 2a, solve POMDP.
 
+> In all of Stage 1 and 2, stage 1a is the **most critical** step to escape the gravity of the deep learning paradigm (setup a architecture, i.i.d. data in, gradient out). The same has been proposed in the [Alberta Plan](https://arxiv.org/pdf/2208.11173.pdf), the 1st and 2nd in the list are the prerequisite of all the steps after. Although I disagree that the problem can be easily separable into continual learning with given features and continual feature adaptation. When the feature is updated, the supervised predictor would fail to work unless it is coadapted with the feature, which is a curse of hierarchy, when any layer is updated, all the succeeding layers need to coadapt. And the coadaptation wouldn't be possible without the usage of previous experiences. My alternative is instead to build a online learnable probability model, because information won't stay if there's no designed mechanism to retain them. I will write another post to share my opinions on the failure modes of various continual learning strategies.
+
 # Stage 3: Next level questions
 
 These are far away in the future, but just writing down my thinkings.
