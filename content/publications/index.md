@@ -22,6 +22,9 @@ Rahaf Aljundi, **Min Lin**, Baptiste Goujaud, Yoshua Bengio.\
 _NeurIPS 2019_
 
 ## AI for Science
+- [Stochastic Taylor Derivative Estimator: Efficient amortization for arbitrary differential operators](https://arxiv.org/abs/2412.00088)\
+Zekun Shi, Zheyuan Hu, **Min Lin**, Kenji Kawaguchi.\
+_NeurIPS 2024 (best paper award)_
 
 - [Automatic Functional Differentiation in JAX](https://openreview.net/forum?id=gzT61ziSCu)\
 **Min Lin**\
@@ -36,6 +39,9 @@ Tianbo Li, **Min Lin**, Zheyuan Hu, Kunhao Zheng, Giovanni Vignale, Kenji Kawagu
 _ICLR 2023_
 
 ## ML Systems
+- [Pipeline Parallelism with Controllable Memory](https://arxiv.org/abs/2405.15362)\
+Penghui Qi, Xinyi Wan, Nyamdavaa Amar, **Min Lin**\
+_NeurIPS 2024_
 
 - [Zero Bubble Pipeline Parallelism](https://openreview.net/forum?id=tuzTN0eIO5)\
 Penghui Qi, Xinyi Wan, Guangxing Huang, **Min Lin**\
