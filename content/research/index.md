@@ -11,7 +11,7 @@ This page is updated time to time
 
 Apparently human brain contains such an algorithm. Let's call it **General Learner** to distinguish from General Intelligence. It seems some deep learning system is close to achieving General Intelligence, yet none of them are General Learners.
 
-A deep learning model has clear phases in its life cycle, pretraining, finetuning, inference etc. Model weights are frozen and learning are stopped once the model is deployed for inference. General Learners have no such limits, they perform inference and learning simultaneously, new experiences are continuously learned into the model while they interact with the world and fulfill tasks.
+A deep learning model has clear phases in its life cycle, pretraining, finetuning, inference etc. Model weights are frozen and learning are stopped once the model is deployed for inference (Richard call this transient learning in his [recent interview](https://youtu.be/NvfK1TkXmOQ?si=ZfDkxgHvReGp-YFa)). General Learners have no such limits, they perform inference and learning simultaneously, new experiences are continuously learned into the model while they interact with the world and fulfill tasks.
 
 The current mainstream trend is to pretrain foundational models, and make sure it adapts to diverse enough situations via "in-context learning". With a big enough pretraining dataset, and an infinite context window, we may side-step online learning. The philosophy behind this is to solve the online problem under the offline paradigm, which falls well within the comfort zone of deep learning. And since we know deep learning works very well, bringing a problem into its comfort zone often works.
 
@@ -26,15 +26,25 @@ I break them down into several stages, the stages are dependent on each other, h
 
 # Stage 1: Learning distributions online
 - **Stage 1a**: Given a sequence of observations $\\{x_t\\}$, learn the time averaged probability distribution $p(x)$ **online**. \
-  Optimal continual learning (or Follow the Leader online learning) [requires perfect information](https://arxiv.org/abs/2006.05188). Although in the online learning literature, regret bounds are proved without such assumptions. I suppose the assumptions in online learning are often too strong (convex w.r.t. the parameters), making the baseline that the regret is computed against too weak. Therefore I believe online learning would only make sense in the context of near perfect information. The model needs to implicitly captures the information of all data, aka, it needs to be probabily models. Follow the Leader online learning on maximum likelihood objective function is also called [ML-plugin code](https://direct.mit.edu/books/book/3813/The-Minimum-Description-Length-Principle), which is one of the prequential codes. The research goal at stage 1a is basically designing a ML-plugin code that works for high dimensional time series. (TODO: Discuss why [LLM is compression](https://openreview.net/forum?id=jznbgiynus) but is not a prequential code.) (TODO: describe potential paths towards implementing an efficient algorithm for stage 1a, and why current deep learning would fail this task.)
+In the context of online learning, this means that we use the log probability as the loss, and try to obtain a regret bound. The parameteric model used for this probability fitting needs to be **scalable** and capable of approaching the true distribution as more data are given. Existing online learning literature often assume simplicity of the loss function to achieve provable bounds, e.g. convexity. However, such simplicity does not coexist with scalability.
+  
+As we're talking about online learning of probability models, it can also be seen from the MDL(compression) angle. The universal code based on the same mechanism of online learning is called **prequential code** (predictive sequential). The awesome [MDL book](https://homepages.cwi.nl/~pdg/book/book.html) introduced **bayesian code** and **ML-plugin** code as two examples of prequential code. The ML-plugin code is related to follow the regularized leader in online learning, and bayesian code correspond to the bayesian approach in continual learning.
 
 - **Stage 1b**: Given the same sequential observation, learn the autoregressive distribution $p(x_t|x_{0:t-1})$ **online**. \
-  This is the most general form of prequential code.
-   
+Stage 1a defines a prequential code where the observations has no time dependencies. The most general prequetial code comes with the capability to model time series. Overall, the stage 1 research goal is to design a scalable prequential code that works for high dimension continuous data. (the algorithm behind compression algorithms like LZW can be seen as prequential code for tabular data.)
+
+To build such a thing, there is a lot to borrow from deep learning, e.g. the hierarchy, the inductive bias etc. But some other things from deep learning would not help and need to be removed, e.g. amortized optimization, as prequential code wants optimality at every single step.
+
+- **Stage 1 Summary**
+1. A solution to stage 1b is also a solution to the solomonoff induction part of [AIXI](https://en.wikipedia.org/wiki/AIXI).
+2. A scalable prequential code at stage 1b should be able to set new SOTA for [Hutter Prize](http://prize.hutter1.net/).
+3. Related to this topic is LLM, ppl talk about [LLM is doing compression](https://openreview.net/forum?id=jznbgiynus). It is only compression if you're compressing lots of data, otherwise the model size would outweigh the benefit. LLM is still deep learning (transient, offline and amortized).
+
+
 # Stage 2: Learning agents online
 This stage is quite close to developing a practical implementation to AIXI. Firstly, if we solve stage 1, it gives us a prequential code which is a practical and reasonable replacement for the solomonoff induction in AIXI. Stage 2 it is about a practical implementation of the return maximization part.
 
-Estimate the return directly is very inefficient, therefore value functions are introduced in RL literature, i.e. Q learning, actor-critic. At stage 2 we need to study whether these RL techniques can be converted into online versions. We know that Q learning is online in the tabular case, therefore we could use the tool developed in stage 1 to create online Q learning on non-tabular cases. We also know that in actor-critic value functions and policies depends on each other, therefore it may be difficult to develop an online version.
+Estimate the return directly is very inefficient, therefore value functions are introduced in RL literature, i.e. Q learning, actor-critic. At stage 2 we need to study whether these RL techniques can be converted into online versions. We know that Q learning is online in the tabular case, therefore we could use the tool developed in stage 1 to create online Q learning on non-tabular cases.
 
 - **Stage 2a**: With the online learnable $p(x)$ provided by stage 1a, find a solution to MDP.
 - **Stage 2b**: With the online learnable $p(x_{t}|x_{0:t-1})$, and the tools developed in Stage 2a, solve POMDP.
