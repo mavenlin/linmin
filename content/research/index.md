@@ -25,17 +25,20 @@ I break them down into several stages, the stages are dependent on each other, h
 ![](roadmap.svg)
 
 # Stage 1: Learning distributions online
-- **Stage 1a**: Given a sequence of observations $\\{x_t\\}$, learn the time averaged probability distribution $p(x)$ **online**. \
+
+**Stage 1a**: Given a sequence of observations $\\{x_t\\}$, learn the time averaged probability distribution $p(x)$ **online**.
+
 In the context of online learning, this means that we use the log probability as the loss, and try to obtain a regret bound. The parameteric model used for this probability fitting needs to be **scalable** and capable of approaching the true distribution as more data are given. Existing online learning literature often assume simplicity of the loss function to achieve provable bounds, e.g. convexity. However, such simplicity does not coexist with scalability.
   
 As we're talking about online learning of probability models, it can also be seen from the MDL(compression) angle. The universal code based on the same mechanism of online learning is called **prequential code** (predictive sequential). The awesome [MDL book](https://homepages.cwi.nl/~pdg/book/book.html) introduced **bayesian code** and **ML-plugin** code as two examples of prequential code. The ML-plugin code is related to follow the regularized leader in online learning, and bayesian code correspond to the bayesian approach in continual learning.
 
-- **Stage 1b**: Given the same sequential observation, learn the autoregressive distribution $p(x_t|x_{0:t-1})$ **online**. \
+**Stage 1b**: Given the same sequential observation, learn the autoregressive distribution $p(x_t|x_{0:t-1})$ **online**.
+
 Stage 1a defines a prequential code where the observations has no time dependencies. The most general prequetial code comes with the capability to model time series. Overall, the stage 1 research goal is to design a scalable prequential code that works for high dimension continuous data. (the algorithm behind compression algorithms like LZW can be seen as prequential code for tabular data.)
 
 To build such a thing, there is a lot to borrow from deep learning, e.g. the hierarchy, the inductive bias etc. But some other things from deep learning would not help and need to be removed, e.g. amortized optimization, as prequential code wants optimality at every single step.
 
-- **Stage 1 Summary**
+**Stage 1 Summary**
 1. A solution to stage 1b is also a solution to the solomonoff induction part of [AIXI](https://en.wikipedia.org/wiki/AIXI).
 2. A scalable prequential code at stage 1b should be able to set new SOTA for [Hutter Prize](http://prize.hutter1.net/).
 3. Related to this topic is LLM, ppl talk about [LLM is doing compression](https://openreview.net/forum?id=jznbgiynus). It is only compression if you're compressing lots of data, otherwise the model size would outweigh the benefit. LLM is still deep learning (transient, offline and amortized).
@@ -46,8 +49,9 @@ This stage is quite close to developing a practical implementation to AIXI. Firs
 
 Estimate the return directly is very inefficient, therefore value functions are introduced in RL literature, i.e. Q learning, actor-critic. At stage 2 we need to study whether these RL techniques can be converted into online versions. We know that Q learning is online in the tabular case, therefore we could use the tool developed in stage 1 to create online Q learning on non-tabular cases.
 
-- **Stage 2a**: With the online learnable $p(x)$ provided by stage 1a, find a solution to MDP.
-- **Stage 2b**: With the online learnable $p(x_{t}|x_{0:t-1})$, and the tools developed in Stage 2a, solve POMDP.
+**Stage 2a**: With the online learnable $p(x)$ provided by stage 1a, find a solution to MDP.
+
+**Stage 2b**: With the online learnable $p(x_{t}|x_{0:t-1})$, and the tools developed in Stage 2a, solve POMDP.
 
 > In all of Stage 1 and 2, stage 1a is the **most critical** step to escape the gravity of the deep learning paradigm (setup a architecture, i.i.d. data in, gradient out). The same has been proposed in the [Alberta Plan](https://arxiv.org/pdf/2208.11173.pdf), the 1st and 2nd in the list are the prerequisite of all the steps after. Although I disagree that the problem can be easily separable into continual learning with given features and continual feature adaptation. When the feature is updated, the supervised predictor would fail to work unless it is coadapted with the feature, which is a curse of hierarchy, when any layer is updated, all the succeeding layers need to coadapt. And the coadaptation wouldn't be possible without the usage of previous experiences. My alternative is instead to build a online learnable probability model, because information won't stay if there's no designed mechanism to retain them. I will write another post to share my opinions on the failure modes of various continual learning strategies.
 
