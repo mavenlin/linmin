@@ -38,7 +38,7 @@ Stage 1a defines a prequential code where the observations has no time dependenc
 
 To build such a thing, there is a lot to borrow from deep learning, e.g. the hierarchy, the inductive bias etc. But some other things from deep learning would not help and need to be removed, e.g. amortized optimization, as prequential code wants optimality at every single step.
 
-**Stage 1 Summary**
+**Stage 1 Implication**
 1. A solution to stage 1b is also a solution to the solomonoff induction part of [AIXI](https://en.wikipedia.org/wiki/AIXI).
 2. A scalable prequential code at stage 1b should be able to set new SOTA for [Hutter Prize](http://prize.hutter1.net/).
 3. Related to this topic is LLM, ppl talk about [LLM is doing compression](https://openreview.net/forum?id=jznbgiynus). It is only compression if you're compressing lots of data, otherwise the model size would outweigh the benefit. LLM is still deep learning (transient, offline and amortized).
