@@ -37,4 +37,9 @@ katex: true
 
 - **We may not need generating models, but we need generative models.**\
   Yann LeCun is [against generating pixels](https://x.com/ylecun/status/1759486703696318935), while there is a subtle difference between a **generative model**(having a probability model) and a **generating model**(being able to sample). I agree on the generating pixel is wasteful part, but disagree with the more general dissing on generative models.
-  My belief comes from the fact that human beings are the golden standard to evaluate generated images/videos. Although only professional painters are able to paint well, every normal human can serve as an evaluator on whether the generated image from a model is realistic. Meaning every human knows exactly where the data should be in the high dimensional pixel space. Meaning human internally have a good probability model of the pixel space observation, better than any SOTA generating models.
+  My belief comes from the fact that human beings are the golden standard to evaluate generated images/videos. Although only professional painters are able to paint well, every normal human can serve as an evaluator on whether the generated image from a model is realistic, and to this day human evaluation is considered the golden standard. It means that every human knows exactly where the data should be in the high dimensional pixel space. Meaning human internally have a good probability model of the pixel space observation, better than any SOTA generating models.
+
+- **From generative model / bayesian updates to statistics**\
+  Since 2019, I converted to a probability model believer and fascinated with ideas like AIXI, predictive coding, bayesian brain, and especially interested in how to use these ideas to achieve online learning. My recent research goes around how to algorithmically implement online bayesian learning (bayesian prequential code in the words of MDL).
+
+![](/posts/why_statistics.svg)

@@ -34,7 +34,7 @@
     --global-font-size: 16px;
     --global-font-color: #444;
     --mono-font-stack: Inconsolata, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --font-stack: Droid Sans, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --font-stack: Times New Roman
     --global-line-height: 1.6em;
     --page-width: 60em;
     --display-h1-decoration: 1;
