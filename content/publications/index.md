@@ -5,6 +5,10 @@
 
 ## Machine Learning
 
+- [Understanding R1-Zero-Like Training: A Critical Perspective](https://arxiv.org/abs/2503.20783)\
+Zichen Liu, Changyu Chen, Wenjun Li, Penghui Qi, Tianyu Pang, Chao Du, Wee Sun Lee, **Min Lin**.\
+_COLM 2025_
+
 - [Locality Sensitive Sparse Encoding for Learning World Models Online](https://openreview.net/forum?id=i8PjQT3Uig)\
 Zichen Liu, Chao Du, Wee Sun Lee, **Min Lin**.\
 _ICLR 2024_
@@ -22,6 +26,10 @@ Rahaf Aljundi, **Min Lin**, Baptiste Goujaud, Yoshua Bengio.\
 _NeurIPS 2019_
 
 ## AI for Science
+- [Diagonalization without Diagonalization: A Direct Optimization Approach for Solid-State Density Functional Theory](https://arxiv.org/abs/2411.05033)\
+Tianbo Li, **Min Lin**, Stephen Dale, Zekun Shi, A. H. Castro Neto, Kostya S. Novoselov, Giovanni Vignale.\
+_Journal of Chemical Theory and Computation 2025_
+
 - [Stochastic Taylor Derivative Estimator: Efficient amortization for arbitrary differential operators](https://arxiv.org/abs/2412.00088)\
 Zekun Shi, Zheyuan Hu, **Min Lin**, Kenji Kawaguchi.\
 _NeurIPS 2024 (best paper award)_
